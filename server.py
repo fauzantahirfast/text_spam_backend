@@ -11,7 +11,6 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-nltk.download("punkt", quiet=True)  # Ensure "punkt" tokenizer is downloaded
 ps = PorterStemmer()
 def preprocess_text(text):
     text = text.lower()
